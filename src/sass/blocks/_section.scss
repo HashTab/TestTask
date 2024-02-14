@@ -1,0 +1,38 @@
+.section {
+  .wrapper {
+    img {
+      max-width: 442px;
+      width: 100%;
+    }
+    padding: 42px 144px 0px 144px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include desktop {
+      padding: 20px 48px 48px 48px;
+    }
+    @include tablet {
+      padding: 20px 24px 48px 24px;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  &__text_wrapper {
+    max-width: 661px;
+    width: 100%;
+    max-height: 268px;
+    height: auto;
+    h2 {
+      max-width: 601px;
+    }
+    p {
+      max-width: 601px;
+      margin-top: 16px;
+    }
+    button {
+      margin-top: 32px;
+    }
+  }
+}

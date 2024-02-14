@@ -1,0 +1,40 @@
+button {
+  font-family: var(--font-family);
+  color: var(--neutral-white);
+  background: var(--brand-primary);
+  font-weight: 400;
+  text-align: center;
+  border-radius: 4px;
+  margin: 0;
+  cursor: pointer;
+  border: none;
+  &:focus {
+    outline: 2px solid var(--neutral-d-grey);
+  }
+  &:active {
+    background: var(--shade-s2);
+  }
+}
+
+.button_medium {
+  font-size: 16px;
+  line-height: 125%;
+  padding: 14px 32px;
+}
+
+.button_small {
+  font-size: 14px;
+  line-height: 114%;
+  padding: 8px 24px;
+}
+
+@media (max-width: 1023px) {
+  .button_medium {
+    font-size: 14px;
+    line-height: 100%;
+  }
+  .button_small {
+    font-size: 12px;
+    line-height: 100%;
+  }
+}

@@ -1,0 +1,37 @@
+.clients {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px 144px 0px 144px;
+    @include desktop {
+      padding: 20px 48px;
+    }
+    @include tablet {
+      padding: 20px 24px;
+    }
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+  &__logos_wrapper {
+    margin-top: 16px;
+    padding: 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    img {
+      border-radius: 8px;
+      width: 48px;
+      height: 48px;
+      @include mobile {
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
+}

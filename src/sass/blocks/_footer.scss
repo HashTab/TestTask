@@ -1,0 +1,127 @@
+.footer {
+  background: var(--neutral-black);
+  &__demo_wrapper {
+    background: var(--neutral-silver);
+    text-align: center;
+    padding: 32px 0px;
+    h2 {
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 119%;
+      text-align: center;
+      color: var(--neutral-black);
+      @include desktop {
+        font-size: 42px;
+      }
+      @include tablet {
+        font-size: 32px;
+      }
+    }
+    button {
+      margin-top: 32px;
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    padding: 64px 144px;
+    @include desktop {
+      padding: 20px 48px;
+    }
+    @include tablet {
+      padding: 20px 24px;
+    }
+    @include mobile {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    p {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 200%;
+      color: var(--neutral-silver);
+    }
+    &__logo_wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      justify-content: space-between;
+      .logos {
+        a {
+          &:hover {
+            &::before {
+              display: none;
+            }
+          }
+        }
+        width: 176px;
+        height: 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    &__links_wrapper {
+      max-width: 635px;
+      width: 100%;
+      min-height: 200px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      h3 {
+        margin-bottom: 24px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--neutral-white);
+      }
+      ul {
+        list-style: none;
+        li {
+          margin-top: 12px;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 143%;
+          color: var(--neutral-silver);
+        }
+      }
+      .form {
+        @include mobile {
+          margin-top: 30px;
+        }
+      }
+      form {
+        position: relative;
+        button {
+          background: none;
+          position: absolute;
+          top: 12px;
+          right: 12px;
+        }
+        input {
+          all: unset;
+          box-sizing: border-box;
+          padding: 0 12px;
+          font-family: var(--font-family);
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 143%;
+          color: rgba(217, 219, 225, 1);
+          border-radius: 8px;
+          width: 255px;
+          height: 40px;
+          background: rgba(217, 219, 225, 0.2);
+          &::placeholder {
+            color: rgba(217, 219, 225, 1);
+          }
+        }
+      }
+    }
+  }
+}

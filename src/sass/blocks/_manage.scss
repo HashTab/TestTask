@@ -1,0 +1,104 @@
+.manage {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 144px 0px 144px;
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+  &__cards_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding: 10px 0px;
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 8px;
+      padding: 24px 32px;
+      max-width: 299px;
+      width: 100%;
+      max-height: 260px;
+      height: auto;
+      box-shadow: 0 2px 4px 0 rgba(171, 190, 209, 0.2);
+      background: var(--neutral-white);
+      &__img {
+        position: relative;
+        width: 65px;
+        height: 56px;
+        img {
+          width: 48px;
+          height: 48px;
+          position: relative;
+          z-index: 10;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          border-radius: 18px 5px 10px 5px;
+          width: 50px;
+          height: 48px;
+          background: var(--tint-t5);
+          transform: rotate(180deg);
+          z-index: 1;
+        }
+      }
+      h3 {
+        margin-top: 16px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 129%;
+        text-align: center;
+        color: var(--neutral-d-grey);
+      }
+      p {
+        margin-top: 8px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        text-align: center;
+        color: var(--neutral-grey);
+        width: 251px;
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .manage {
+    .wrapper {
+      padding: 20px 48px;
+    }
+    &__cards_wrapper {
+      justify-content: center;
+      gap: 20px;
+      .card {
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .manage {
+    .wrapper {
+      padding: 20px 24px;
+    }
+  }
+}
+@media (max-width: 767px) {
+}

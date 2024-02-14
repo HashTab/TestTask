@@ -1,0 +1,67 @@
+.hero {
+  background: var(--neutral-silver);
+  .wrapper {
+    img {
+      max-width: 390px;
+      width: 100%;
+    }
+    display: flex;
+    flex-direction: row;
+    column-gap: 104px;
+    align-items: center;
+    h2 {
+      font-weight: 600;
+      font-size: 64px;
+      line-height: 119%;
+      color: var(--neutral-d-grey);
+      span {
+        color: var(--brand-primary);
+      }
+    }
+    p {
+      margin-top: 16px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--neutral-grey);
+    }
+    button {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .hero {
+    .wrapper {
+      padding: 40px 48px;
+      h2 {
+        font-size: 32px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .hero {
+    .wrapper {
+      padding: 40px 24px;
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .hero {
+    .wrapper {
+      flex-direction: column-reverse;
+      row-gap: 50px;
+    }
+  }
+}

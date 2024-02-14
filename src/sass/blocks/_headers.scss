@@ -1,0 +1,46 @@
+.header {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  color: var(--neutral-d-grey);
+  span {
+    color: var(--brand-primary);
+  }
+}
+
+.subheader {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--neutral-grey);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--neutral-grey);
+}
+
+@media (max-width: 1439px) {
+  .header {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header {
+    font-size: 28px;
+  }
+  .subheader {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    font-size: 20px;
+  }
+  .subheader {
+    font-size: 12px;
+  }
+}
